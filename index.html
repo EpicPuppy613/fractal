@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FRACTAL</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h2>Generation Settings</h2>
+        <strong>Grid:</strong>
+        <table>
+            <tr>
+                <td><input type="checkbox" id="0,0" checked /></td>
+                <td><input type="checkbox" id="1,0" checked /></td>
+                <td><input type="checkbox" id="2,0" checked /></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="0,1" checked /></td>
+                <td><input type="checkbox" id="1,1" /></td>
+                <td><input type="checkbox" id="2,1" checked /></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="0,2" checked /></td>
+                <td><input type="checkbox" id="1,2" checked /></td>
+                <td><input type="checkbox" id="2,2" checked /></td>
+            </tr>
+        </table>
+        <strong>Speed: </strong> Slow <input id="speed" class="slider" type="range" min="1" max="9" value="5" /> Fast<br>
+        <button onclick="Generate()">Generate</button><br><br>
+        <canvas id="test" width="1280" height="720"></canvas>
+        <p id="debug"></p>
+        <script src="script.js"></script>
+    </body>
+</html>
